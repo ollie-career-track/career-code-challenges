@@ -15,7 +15,11 @@ describe('Set class', () => {
     describe('Add method', () => {
 
       it('adds an item', () => {
+        const set = new Set;
+        set.add('item');
 
+        expect(set.setArray[0]).toBe('item');
+        expect(set.setArray.length).toBe(1);
       });
 
       it('can add multiple items', () => {

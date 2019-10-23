@@ -16,7 +16,11 @@ class Set {
   }
 
   add(item) {
-    return item;
+    if(this.setArray.length === 0) {
+      this.setArray.push(item);
+    }
+
+    
   }
 
   remove(item) {
