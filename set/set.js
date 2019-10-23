@@ -20,7 +20,10 @@ class Set {
       this.setArray.push(item);
     }
 
-
+    if(!this.has(item)) {
+      this.setArray.push(item);
+    }
+    
   }
 
   remove(item) {

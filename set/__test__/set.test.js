@@ -23,7 +23,17 @@ describe('Set class', () => {
       });
 
       it('can add multiple items', () => {
+        const set = new Set;
 
+        set.add('one');
+        set.add('two');
+        set.add('three');
+
+        expect(set.setArray[0]).toBe('one');
+        expect(set.setArray[1]).toBe('two');
+        expect(set.setArray[2]).toBe('three');
+        
+        expect(set.setArray.length).toBe(3);
       });
 
       it('throws error if set already contains item', () => {
