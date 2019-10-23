@@ -20,7 +20,7 @@ class Set {
       this.setArray.push(item);
     }
 
-    
+
   }
 
   remove(item) {
@@ -28,7 +28,13 @@ class Set {
   }
 
   has(item) {
-    return item;
+    for(let i = 0; i < this.setArray.length; i++) {
+      if(this.setArray[i] === item) {
+        return true;
+      }
+    }
+
+    return false;
   }
 
   intersection(set) {

@@ -43,7 +43,11 @@ describe('Set class', () => {
 
     describe('Has method', () => {
       it('returns true when set contains item', () => {
+        const set = new Set;
+        set.add('item');
 
+        const result = set.has('item');
+        expect(result).toBe(true);
       });
 
       it('returns false when item is not in set', () => {
