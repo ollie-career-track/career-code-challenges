@@ -1,7 +1,102 @@
 // const Set = require('../set');
 
 describe('Set class', () => {
-  it('Set', () => {
+  describe('Set instantiation', () => {
 
+    it('creates an empty set upon instantiation', () => {
+
+    });
+  });
+
+  describe('Instance methods', () => {
+    describe('Add method', () => {
+
+      it('adds an item', () => {
+
+      });
+
+      it('can add multiple items', () => {
+
+      });
+
+      it('throws error if set already contains item', () => {
+
+      });
+    });
+
+    describe('Remove method', () => {
+      it('removes an item', () => {
+
+      });
+
+      it('can empty a set of items', () => {
+
+      });
+    });
+
+    describe('Has method', () => {
+      it('returns true when set contains item', () => {
+
+      });
+
+      it('returns false when item is not in set', () => {
+
+      });
+    });
+
+    describe('Intersection method', () => {
+      it('returns new set containing items in both sets', () => {
+
+      });
+
+      it('returns false if no intersections', () => {
+
+      });
+    });
+
+    describe('Union method', () => {
+      it('returns new set with all items from both sets', () => {
+
+      });
+    });
+
+    describe('Difference method', () => {
+      it('returns new set containing items that not shared between sets', () => {
+
+      });
+
+      it('returns false if no differences', () => {
+
+      });
+    });
+  });
+
+  describe('Static methods', () => {
+    describe('Static intersection method', () => {
+
+      it('returns new set containing items in both sets', () => {
+
+      });
+
+      it('returns false if no intersections', () => {
+
+      });
+    });
+
+    describe('Static union method', () => {
+      it('returns new set with all items from both sets', () => {
+
+      });
+    });
+
+    describe('Static difference method', () => {
+      it('returns new set containing items that not shared between sets', () => {
+
+      });
+
+      it('returns false if no differences', () => {
+
+      });
+    });
   });
 });
