@@ -32,12 +32,18 @@ describe('Set class', () => {
         expect(set.setArray[0]).toBe('one');
         expect(set.setArray[1]).toBe('two');
         expect(set.setArray[2]).toBe('three');
-        
+
         expect(set.setArray.length).toBe(3);
       });
 
-      it('throws error if set already contains item', () => {
+      it('will not add to set if item already in set', () => {
+        const set = new Set;
+        set.add('item');
 
+        const result = set.add('item');
+
+        expect(result).toBe('Cannot add item already in set');
+        expect(set.setArray.length).toBe(1);
       });
     });
 

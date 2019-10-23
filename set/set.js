@@ -23,7 +23,8 @@ class Set {
     if(!this.has(item)) {
       this.setArray.push(item);
     }
-    
+
+    return 'Cannot add item already in set';
   }
 
   remove(item) {
