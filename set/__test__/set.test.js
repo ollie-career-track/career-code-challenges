@@ -49,11 +49,20 @@ describe('Set class', () => {
 
     describe('Remove method', () => {
       it('removes an item', () => {
+        const set = new Set;
 
+        set.add('item');
+        set.add('remove me');
+
+        set.remove('remove me');
+        const result = set.has('remove me');
+
+        expect(result).toBe(false);
+        expect(set.setArray.length).toBe(1);
       });
 
       it('can empty a set of items', () => {
-
+        
       });
     });
 
@@ -75,7 +84,7 @@ describe('Set class', () => {
     });
 
     describe('Intersection method', () => {
-      it('returns new set containing items in both sets', () => {
+      it('returns new set containing items in both sets with no duplicates', () => {
 
       });
 
@@ -85,13 +94,13 @@ describe('Set class', () => {
     });
 
     describe('Union method', () => {
-      it('returns new set with all items from both sets', () => {
+      it('returns new set with all items from both sets with no duplicates', () => {
 
       });
     });
 
     describe('Difference method', () => {
-      it('returns new set containing items that not shared between sets', () => {
+      it('returns new set containing items not shared between sets', () => {
 
       });
 
@@ -104,7 +113,7 @@ describe('Set class', () => {
   describe('Static methods', () => {
     describe('Static intersection method', () => {
 
-      it('returns new set containing items in both sets', () => {
+      it('returns new set containing items in both sets with no duplicates', () => {
 
       });
 
@@ -114,13 +123,13 @@ describe('Set class', () => {
     });
 
     describe('Static union method', () => {
-      it('returns new set with all items from both sets', () => {
+      it('returns new set with all items from both sets with no duplicates', () => {
 
       });
     });
 
     describe('Static difference method', () => {
-      it('returns new set containing items that not shared between sets', () => {
+      it('returns new set containing items not shared between sets', () => {
 
       });
 

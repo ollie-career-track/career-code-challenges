@@ -28,7 +28,11 @@ class Set {
   }
 
   remove(item) {
-    return item;
+    for(let i = 0; i < this.setArray.length; i++) {
+      if(this.setArray[i] === item) {
+        this.setArray.splice([i], 1);
+      }
+    }
   }
 
   has(item) {
