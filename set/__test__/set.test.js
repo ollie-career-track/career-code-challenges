@@ -51,7 +51,10 @@ describe('Set class', () => {
       });
 
       it('returns false when item is not in set', () => {
+        const set = new Set;
+        const result = set.has('item');
 
+        expect(result).toBe(false);
       });
     });
 
