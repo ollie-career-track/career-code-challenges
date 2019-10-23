@@ -1,10 +1,13 @@
-// const Set = require('../set');
+const Set = require('../set');
 
 describe('Set class', () => {
   describe('Set instantiation', () => {
 
     it('creates an empty set upon instantiation', () => {
+      const set = new Set;
 
+      expect(set.setArray).toEqual([]);
+      expect(set.setArray.length).toBe(0);
     });
   });
 
