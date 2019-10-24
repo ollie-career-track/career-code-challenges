@@ -62,7 +62,21 @@ describe('Set class', () => {
       });
 
       it('can empty a set of items', () => {
-        
+        const set = new Set;
+
+        set.add('one');
+        set.add('two');
+        set.add('three');
+
+        set.remove('one');
+        set.remove('two');
+        set.remove('three');
+
+        expect(set.has('one')).toBe(false);
+        expect(set.has('two')).toBe(false);
+        expect(set.has('three')).toBe(false);
+
+        expect(set.setArray.length).toBe(0);
       });
     });
 
