@@ -108,7 +108,22 @@ describe('Set class', () => {
     });
 
     describe('Union method', () => {
-      it('returns new set with all items from both sets with no duplicates', () => {
+      it('returns new set with all items from both sets', () => {
+        const one = new Set;
+
+        one.add(0);
+        one.add(1);
+
+        const two = new Set;
+
+        two.add(2);
+        two.add(3);
+
+        const result = one.union(two);
+        expect(result.setArray.length).toBe(4);
+      });
+
+      it('returns a new set with no duplicates', () => {
 
       });
     });
@@ -138,6 +153,22 @@ describe('Set class', () => {
 
     describe('Static union method', () => {
       it('returns new set with all items from both sets with no duplicates', () => {
+        const one = new Set;
+
+        one.add(0);
+        one.add(1);
+
+        const two = new Set;
+
+        two.add(2);
+        two.add(3);
+
+        const result = Set.union(one, two);
+
+        expect(result.setArray.length).toBe(4);
+      });
+
+      it('returns set with no duplicates', {
 
       });
     });

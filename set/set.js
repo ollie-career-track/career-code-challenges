@@ -8,7 +8,17 @@ class Set {
   }
 
   static union(setOne, setTwo) {
-    return setOne + setTwo;
+    const union = new Set;
+
+    for(let i = 0; i < setOne.setArray.length; i++) {
+      union.add(setOne.setArray[i]);
+    }
+
+    for(let i = 0; i < setTwo.setArray.length; i++) {
+      union.add(setTwo.setArray[i]);
+    }
+
+    return union;
   }
 
   static difference(setOne, setTwo) {
@@ -50,7 +60,7 @@ class Set {
   }
 
   union(set) {
-    return set;
+    return Set.union(this, set);
   }
 
   difference(set) {
