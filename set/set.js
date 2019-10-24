@@ -22,7 +22,21 @@ class Set {
   }
 
   static difference(setOne, setTwo) {
-    return setOne + setTwo;
+    const difference = new Set;
+
+    for(let i = 0; i < setOne.setArray.length; i++) {
+      if(!setTwo.setArray.includes(setOne.setArray[i])) {
+        difference.add(setOne.setArray[i]);
+      }
+    }
+
+    for(let i = 0; i < setTwo.setArray.length; i++) {
+      if(!setOne.setArray.includes(setTwo.setArray[i])) {
+        difference.add(setTwo.setArray[i]);
+      }
+    }
+
+    return difference;
   }
 
   add(item) {
@@ -64,7 +78,7 @@ class Set {
   }
 
   difference(set) {
-    return set;
+    return Set.difference(this, set);
   }
 }
 

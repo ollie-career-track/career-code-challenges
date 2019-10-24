@@ -124,7 +124,21 @@ describe('Set class', () => {
       });
 
       it('returns a new set with no duplicates', () => {
+        const one = new Set;
 
+        one.add(0);
+        one.add('one');
+        one.add(1);
+
+        const two = new Set;
+
+        two.add(0);
+        two.add('two');
+        two.add(1);
+
+        const result = one.union(two);
+
+        expect(result.setArray.length).toBe(4);
       });
     });
 
@@ -168,8 +182,22 @@ describe('Set class', () => {
         expect(result.setArray.length).toBe(4);
       });
 
-      it('returns set with no duplicates', {
+      it('returns set with no duplicates', () => {
+        const one = new Set;
 
+        one.add(0);
+        one.add('one');
+        one.add(1);
+
+        const two = new Set;
+
+        two.add(0);
+        two.add('two');
+        two.add(1);
+
+        const result = Set.union(one, two);
+
+        expect(result.setArray.length).toBe(4);
       });
     });
 
