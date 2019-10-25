@@ -99,7 +99,21 @@ describe('Set class', () => {
 
     describe('Intersection method', () => {
       it('returns new set containing items in both sets with no duplicates', () => {
+        const one = new Set;
 
+        one.add('one');
+        one.add(1);
+        one.add(2);
+
+        const two = new Set;
+
+        two.add('two');
+        two.add(1);
+        two.add(2);
+
+        const result = one.intersection(two);
+
+        expect(result.setArray.length).toBe(2);
       });
 
       it('returns false if no intersections', () => {
@@ -157,7 +171,21 @@ describe('Set class', () => {
     describe('Static intersection method', () => {
 
       it('returns new set containing items in both sets with no duplicates', () => {
+        const one = new Set;
 
+        one.add('one');
+        one.add(1);
+        one.add(2);
+
+        const two = new Set;
+
+        two.add('two');
+        two.add(1);
+        two.add(2);
+
+        const result = Set.intersection(one, two);
+
+        expect(result.setArray.length).toBe(2);
       });
 
       it('returns false if no intersections', () => {
@@ -203,7 +231,7 @@ describe('Set class', () => {
 
     describe('Static difference method', () => {
       it('returns new set containing items not shared between sets', () => {
-
+        
       });
 
       it('returns false if no differences', () => {

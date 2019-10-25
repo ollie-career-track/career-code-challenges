@@ -4,7 +4,19 @@ class Set {
   }
 
   static intersection(setOne, setTwo) {
-    return setOne + setTwo;
+    const intersection = new Set;
+
+    for(let i = 0; i < setTwo.setArray.length; i++) {
+      if(setTwo.has(setOne.setArray[i])) {
+        intersection.setArray.push(setOne.setArray[i]);
+      }
+    }
+
+    if(intersection.setArray.length < 1) {
+      return false;
+    }
+
+    return intersection;
   }
 
   static union(setOne, setTwo) {
@@ -25,15 +37,19 @@ class Set {
     const difference = new Set;
 
     for(let i = 0; i < setOne.setArray.length; i++) {
-      if(!setTwo.setArray.includes(setOne.setArray[i])) {
+      if(!setTwo.has(setOne.setArray[i])) {
         difference.add(setOne.setArray[i]);
       }
     }
 
     for(let i = 0; i < setTwo.setArray.length; i++) {
-      if(!setOne.setArray.includes(setTwo.setArray[i])) {
+      if(!setOne.has(setTwo.setArray[i])) {
         difference.add(setTwo.setArray[i]);
       }
+    }
+
+    if(difference.setArray.length < 1) {
+      return false;
     }
 
     return difference;
@@ -70,7 +86,7 @@ class Set {
   }
 
   intersection(set) {
-    return set;
+    return Set.intersection(this, set);
   }
 
   union(set) {
