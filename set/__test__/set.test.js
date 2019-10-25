@@ -168,11 +168,35 @@ describe('Set class', () => {
 
     describe('Difference method', () => {
       it('returns new set containing items not shared between sets', () => {
+        const one = new Set;
 
+        one.add(0);
+        one.add(1);
+        one.add('one');
+
+        const two = new Set;
+
+        two.add(0);
+        two.add(1);
+        two.add('two');
+
+        const result = one.difference(two);
+
+        expect(result.setArray.length).toBe(2);
       });
 
       it('returns false if no differences', () => {
+        const one = new Set;
+        one.add(0);
+        one.add(1);
 
+        const two = new Set;
+        two.add(0);
+        two.add(1);
+
+        const result = one.difference(two);
+
+        expect(result).toBe(false);
       });
     });
   });
