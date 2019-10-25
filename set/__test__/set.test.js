@@ -117,7 +117,17 @@ describe('Set class', () => {
       });
 
       it('returns false if no intersections', () => {
+        const one = new Set;
+        one.add(0);
+        one.add(1);
 
+        const two = new Set;
+        two.add(2);
+        two.add(4);
+
+        const result = one.intersection(two);
+
+        expect(result).toBe(false);
       });
     });
 
@@ -189,7 +199,17 @@ describe('Set class', () => {
       });
 
       it('returns false if no intersections', () => {
+        const one = new Set;
+        one.add(0);
+        one.add(1);
 
+        const two = new Set;
+        two.add(2);
+        two.add(4);
+
+        const result = Set.intersection(one, two);
+
+        expect(result).toBe(false);
       });
     });
 
