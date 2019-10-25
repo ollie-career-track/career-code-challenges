@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1571975527253" clover="3.2.0">
-  <project timestamp="1571975527253" name="All files">
-    <metrics statements="40" coveredstatements="29" conditionals="18" coveredconditionals="12" methods="10" coveredmethods="8" elements="68" coveredelements="49" complexity="0" loc="40" ncloc="40" packages="1" files="1" classes="1"/>
+<coverage generated="1571975771038" clover="3.2.0">
+  <project timestamp="1571975771038" name="All files">
+    <metrics statements="40" coveredstatements="39" conditionals="18" coveredconditionals="18" methods="10" coveredmethods="9" elements="68" coveredelements="66" complexity="0" loc="40" ncloc="40" packages="1" files="1" classes="1"/>
     <file name="set.js" path="/Users/ollie/alchemy/career-track/career-code-challenges/set/set.js">
-      <metrics statements="40" coveredstatements="29" conditionals="18" coveredconditionals="12" methods="10" coveredmethods="8"/>
-      <line num="3" count="32" type="stmt"/>
+      <metrics statements="40" coveredstatements="39" conditionals="18" coveredconditionals="18" methods="10" coveredmethods="9"/>
+      <line num="3" count="38" type="stmt"/>
       <line num="7" count="4" type="stmt"/>
       <line num="9" count="4" type="stmt"/>
       <line num="10" count="10" type="cond" truecount="2" falsecount="0"/>
@@ -18,28 +18,28 @@
       <line num="29" count="4" type="stmt"/>
       <line num="30" count="10" type="stmt"/>
       <line num="33" count="4" type="stmt"/>
-      <line num="37" count="0" type="stmt"/>
-      <line num="39" count="0" type="stmt"/>
-      <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="41" count="0" type="stmt"/>
-      <line num="45" count="0" type="stmt"/>
-      <line num="46" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="47" count="0" type="stmt"/>
-      <line num="51" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="52" count="0" type="stmt"/>
-      <line num="55" count="0" type="stmt"/>
-      <line num="59" count="72" type="cond" truecount="2" falsecount="0"/>
-      <line num="60" count="26" type="stmt"/>
-      <line num="63" count="72" type="cond" truecount="2" falsecount="0"/>
-      <line num="64" count="41" type="stmt"/>
-      <line num="67" count="72" type="stmt"/>
+      <line num="37" count="2" type="stmt"/>
+      <line num="39" count="2" type="stmt"/>
+      <line num="40" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="41" count="1" type="stmt"/>
+      <line num="45" count="2" type="stmt"/>
+      <line num="46" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="47" count="1" type="stmt"/>
+      <line num="51" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="52" count="1" type="stmt"/>
+      <line num="55" count="1" type="stmt"/>
+      <line num="59" count="84" type="cond" truecount="2" falsecount="0"/>
+      <line num="60" count="31" type="stmt"/>
+      <line num="63" count="84" type="cond" truecount="2" falsecount="0"/>
+      <line num="64" count="48" type="stmt"/>
+      <line num="67" count="84" type="stmt"/>
       <line num="71" count="4" type="stmt"/>
       <line num="72" count="6" type="cond" truecount="2" falsecount="0"/>
       <line num="73" count="4" type="stmt"/>
-      <line num="79" count="88" type="stmt"/>
-      <line num="80" count="124" type="cond" truecount="2" falsecount="0"/>
-      <line num="81" count="36" type="stmt"/>
-      <line num="85" count="52" type="stmt"/>
+      <line num="79" count="110" type="stmt"/>
+      <line num="80" count="156" type="cond" truecount="2" falsecount="0"/>
+      <line num="81" count="49" type="stmt"/>
+      <line num="85" count="61" type="stmt"/>
       <line num="89" count="2" type="stmt"/>
       <line num="93" count="2" type="stmt"/>
       <line num="97" count="0" type="stmt"/>
