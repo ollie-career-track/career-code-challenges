@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1571983062324" clover="3.2.0">
-  <project timestamp="1571983062324" name="All files">
+<coverage generated="1572751907259" clover="3.2.0">
+  <project timestamp="1572751907259" name="All files">
     <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="12" coveredelements="12" complexity="0" loc="11" ncloc="11" packages="1" files="3" classes="3"/>
     <file name="goal.js" path="/Users/ollie/alchemy/career-track/career-code-challenges/revenue/goal.js">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
